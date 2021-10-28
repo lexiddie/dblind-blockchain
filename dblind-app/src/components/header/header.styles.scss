@@ -1,0 +1,44 @@
+.header {
+  position: absolute;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+  &.hide {
+    display: none;
+  }
+
+  .logo-container {
+    height: 100%;
+    width: 50%;
+    padding: 25px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .options {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .option {
+      padding: 10px 15px;
+      cursor: pointer;
+
+      &:last-child {
+        margin-right: 200px;
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+.customer {
+  margin-top: 50px;
+  width: 62em;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  label,
+  span {
+    font-size: 18px;
+    font-weight: Bold;
+  }
+
+  > div:first-child {
+    width: 49%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .image {
+      width: 200;
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    > label {
+      margin-top: 20px;
+    }
+  }
+
+  > div:last-child {
+    //     background-color: aqua;
+    width: 49%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    > div {
+      margin-top: 30px;
+    }
+
+    > label {
+      margin-top: 30px;
+    }
+
+    button {
+      margin-top: 40px !important;
+    }
+
+    .form-input {
+      background: none;
+      background-color: white;
+      color: grey;
+      font-size: 18px;
+      padding: 10px 10px 10px 5px;
+      display: block;
+      width: 100%;
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid grey;
+      margin: 5px 0;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    input[type='password'] {
+      letter-spacing: 0.3em;
+    }
+  }
+}
+
+.customer-address {
+  margin-top: 50px;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  color: black;
+}
